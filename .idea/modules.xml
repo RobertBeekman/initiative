@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/initiative-creator.iml" filepath="$PROJECT_DIR$/.idea/initiative-creator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/initiative.iml" filepath="$PROJECT_DIR$/.idea/initiative.iml" />
     </modules>
   </component>
 </project>

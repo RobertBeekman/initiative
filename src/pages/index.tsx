@@ -1,54 +1,86 @@
-import {useState} from 'react';
-import {Canvas} from "@react-three/fiber";
-import {AccumulativeShadows, Center, OrbitControls, RandomizedLight} from '@react-three/drei';
-import {Bloom, EffectComposer, N8AO, ToneMapping} from "@react-three/postprocessing";
-import styles from "./styles.module.scss";
-import {InitiativeMarker} from "@/components/react-three/InitiativeMarker";
-import {InitiativeEnvironment} from "@/components/react-three/initiativeEnvironment";
-import {InputText} from "primereact/inputtext";
-import {ColorPicker} from "primereact/colorpicker";
+import {RefObject, useRef, useState} from 'react';
+import {PopoverPicker} from "@/components/PopoverPicker";
+import {MarkerDisplay} from "@/components/MarkerDisplay";
+import {STLExporter} from "three/examples/jsm/exporters/STLExporter";
+import {Group} from "three";
+import styles from './styles.module.scss';
 
+const exporter = new STLExporter();
+
+function DownloadButton({text, scene}: { text: string; scene: RefObject<Group> }) {
+    const downloadSTL = () => {
+        scene.current.scale.set(20, 20, 20);
+        scene.current.updateMatrixWorld(true);
+
+        const blob = new Blob([exporter.parse(scene.current)], {type: 'application/octet-stream'});
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = `${text}.stl`;
+        link.click();
+        scene.current.scale.set(1, 1, 1);
+    };
+
+    return <div onClick={downloadSTL} className={styles.button}>Download STL</div>;
+}
 
 export default function Home() {
     const [text, setText] = useState("Strahd von Zarovich");
     const [boxColor, setBoxColor] = useState("#0000ff");
     const [textColor, setTextColor] = useState("#ffffff");
+    const [radius, setRadius] = useState(0.8);
+    const [padding, setPadding] = useState(0.5);
+
+    const sceneRef = useRef<Group>(null!);
 
     return (
-        <>
-            <div className={styles.canvas}>
-                <Canvas shadows>
-                    <ambientLight intensity={0.3}/>
-                    <directionalLight
-                        position={[5, 10, 7.5]}
-                        intensity={1}
-                        castShadow
-                        shadow-mapSize-width={1024}
-                        shadow-mapSize-height={1024}
+        <div className={styles.container}>
+            <MarkerDisplay text={text}
+                           radius={radius / 10}
+                           padding={padding}
+                           boxColor={boxColor}
+                           textColor={textColor}
+                           sceneRef={sceneRef}/>
+
+            <div className={styles.background}/>
+            <div className={styles["form-container"]}>
+                <label>Marker text <br/>
+                    <input
+                        type="text"
+                        value={text}
+                        onChange={(e) => setText(e.target.value)}
+                        placeholder="Enter name"/>
+                </label>
+                <label>
+                    Corner smoothing <br/>
+                    <input
+                        type="range"
+                        min="0.1"
+                        max="2"
+                        step="0.1"
+                        value={radius}
+                        onChange={(e) => setRadius(parseFloat(e.target.value))}
                     />
-                    <group position={[0, -0.5, 0]}>
-                        <Center top>
-                            <InitiativeMarker text={text} boxColor={boxColor} textColor={textColor}/>
-                        </Center>
-                        <AccumulativeShadows temporal frames={100} color={"black"} opacity={1.05}>
-                            <RandomizedLight radius={5} position={[10, 5, -5]}/>
-                        </AccumulativeShadows>
-                    </group>
-                    <OrbitControls enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI}/>
-                    <EffectComposer>
-                        <N8AO aoRadius={0.15} intensity={4} distanceFalloff={2}/>
-                        <Bloom luminanceThreshold={3.5} intensity={0.85} levels={9} mipmapBlur/>
-                        <ToneMapping/>
-                    </EffectComposer>
-                    <InitiativeEnvironment/>
-                </Canvas>
+                </label>
+                <label>
+                    Padding <br/>
+                    <input
+                        type="range"
+                        min="0.1"
+                        max="2"
+                        step="0.1"
+                        value={padding}
+                        onChange={(e) => setPadding(parseFloat(e.target.value))}
+                    />
+                </label>
+
+                <label>Preview box color</label>
+                <PopoverPicker color={boxColor} onChange={setBoxColor}/>
+                <label>Preview text color</label>
+                <PopoverPicker color={textColor} onChange={setTextColor}/>
+
+                <DownloadButton text={text} scene={sceneRef}></DownloadButton>
             </div>
-            <div className="text-center">
-                <InputText value={text} onInput={e => setText((e.target as HTMLInputElement).value)}/>
-                <ColorPicker value={boxColor} onChange={(e) => setBoxColor("#" + e.value?.toString())}/>
-                <ColorPicker value={textColor} onChange={(e) => setTextColor("#" + e.value?.toString())}/>
-            </div>
-        </>
+        </div>
     );
 }
 
