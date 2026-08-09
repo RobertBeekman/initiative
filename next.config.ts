@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   transpilePackages: ['three'],
+  output: 'export',
+  reactCompiler: true,
 };
 
 export default nextConfig;
