@@ -5,41 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97b6b093-4f96-4634-9656-323d1c72b6d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dm-inside.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dm-outside.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fireplace_1k.hdr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Chewy_Regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/FingerPaint_Regular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/noise-texture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/qwantani_dawn_puresky_1k.hdr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scythian_tombs_2_1k.hdr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DmScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/InitiativeMarker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MarkerDisplay.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MarkerDisplay.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PopoverPicker.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PopoverPicker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/initiativeEnvironment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/initiative-creator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/declarations.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/declarations.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/overcast_soil_puresky_1k.hdr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/react-three/InitiativeMarker.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/react-three/initiativeEnvironment.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/styles.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MarkerDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MarkerDisplay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +27,69 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6797257280878966" />
+      <entry key="MS500" value="4.074634259285403" />
+      <entry key="S2" value="7.151570474707492" />
+      <entry key="S5" value="8.189227005080603" />
+      <entry key="S10" value="8.581593839320897" />
+      <entry key="S30" value="8.857556377803814" />
+      <entry key="S60" value="8.939523517570578" />
+      <entry key="M2" value="9.175144249160388" />
+      <entry key="M5" value="10.218580186655078" />
+      <entry key="M10" value="11.213549147533445" />
+      <entry key="M15" value="11.697195572991403" />
+      <entry key="M30" value="12.285143382203229" />
+      <entry key="H1" value="12.625115124946849" />
+      <entry key="H2" value="12.807976792177456" />
+      <entry key="H4" value="12.902814948504922" />
+      <entry key="D1" value="12.983637057593507" />
+      <entry key="W1" value="12.997658352955963" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.6587938222446184" />
+      <entry key="MS500" value="4.060754159678426" />
+      <entry key="S2" value="7.145065427614548" />
+      <entry key="S5" value="8.186217711022145" />
+      <entry key="S10" value="8.580012271404785" />
+      <entry key="S30" value="8.85701114061837" />
+      <entry key="S60" value="8.939243971096136" />
+      <entry key="M2" value="9.174960562718876" />
+      <entry key="M5" value="10.218415521812615" />
+      <entry key="M10" value="11.213422201085523" />
+      <entry key="M15" value="11.697096380254234" />
+      <entry key="M30" value="12.285084903545961" />
+      <entry key="H1" value="12.625083311148046" />
+      <entry key="H2" value="12.807960192052564" />
+      <entry key="H4" value="12.902806468567121" />
+      <entry key="D1" value="12.983635618712352" />
+      <entry key="W1" value="12.997658146767966" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -65,28 +99,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
-    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Repos/initiative/src/components&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.Next.js: server-side.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Robert\\AppData\\Local\\Programs\\WebStorm 2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Repos/initiative/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.Next.js: server-side.executor": "Run",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Users\\Robert\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Repos\initiative\src\components" />
@@ -116,7 +156,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6be00b7b0f42-JavaScript-WS-252.23591.33" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
       </set>
     </attachedChunks>
   </component>
@@ -133,6 +173,8 @@
       <workItem from="1751445582290" duration="4404000" />
       <workItem from="1751795646890" duration="1164000" />
       <workItem from="1751796861315" duration="1239000" />
+      <workItem from="1753196803394" duration="605000" />
+      <workItem from="1786297163115" duration="725000" />
     </task>
     <servers />
   </component>
